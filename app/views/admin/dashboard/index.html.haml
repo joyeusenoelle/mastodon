@@ -42,33 +42,39 @@
         %li
           = link_to t('admin.dashboard.feature_registrations'), edit_admin_settings_path
           - if @registrations_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           = link_to t('admin.dashboard.feature_invites'), edit_admin_settings_path
           - if @invites_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           = link_to t('admin.dashboard.feature_deletions'), edit_admin_settings_path
           - if @deletions_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           = link_to t('admin.dashboard.feature_profile_directory'), edit_admin_settings_path
           - if @profile_directory
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
+        %li
+          = link_to t('admin.dashboard.feature_timeline_preview'), edit_admin_settings_path
+          - if @timeline_preview
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
+          - else
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           = link_to t('admin.dashboard.feature_relay'), admin_relays_path
           - if @relay_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
 
   .dashboard__widgets__versions
     %div
@@ -105,45 +111,45 @@
         %li
           = t('admin.dashboard.search')
           - if @search_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           = t('admin.dashboard.single_user_mode')
           - if @single_user_mode
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           LDAP
           - if @ldap_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           CAS
           - if @cas_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           SAML
           - if @saml_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           PAM
           - if @pam_enabled
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
         %li
           = t 'admin.dashboard.hidden_service'
           - if @hidden_service
-            %span.pull-right.positive-hint= fa_icon 'check fw'
+            %span.pull-right.positive-hint= fa_icon 'power-off fw'
           - else
-            %span.pull-right.negative-hint= fa_icon 'times fw'
+            %span.pull-right.neutral-hint= fa_icon 'power-off fw'
 
   .dashboard__widgets__trends
     %div
